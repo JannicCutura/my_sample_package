@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setuptools.setup(
     name="example-pkg-roblocks", # Replace with your own username
     version="0.0.1",
-    author="Example Author",
+    author="Jannic Cutura",
     author_email="Janniccutura@gmail.com",
     description="A small example package",
     long_description=long_description,
