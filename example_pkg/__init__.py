@@ -1,0 +1,1 @@
+from example_pkg.__about__ import (__title__,__version__,__about__,__email__,__author__,__url__)

@@ -3,15 +3,19 @@ import setuptools
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
+about ={}
+with open("example_pkg/__about__.py") as f:
+    exec(f.read(),about)
+
 setuptools.setup(
     name="example-pkg-roblocks", # Replace with your own username
-    version="0.0.1",
-    author="Jannic Cutura",
-    author_email="Janniccutura@gmail.com",
+    version=about["__version__"],
+    author=about["__author__"],
+    author_email=about["__email__"],
     description="A small example package",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/JannicCutura/my_sample_package",
+    url=about["__url__"],
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
